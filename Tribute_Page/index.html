@@ -2,11 +2,15 @@
 
 <head>
     <title>Ratan Tata - Tribute Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <main id="main">
+
+    <main id="main">
+        <header class="grid-container">
             <h1 id="title">Ratan Naval Tata</h1>
             <div id="img-div">
                 <figure>
@@ -18,7 +22,7 @@
                 </figure>
             </div>
             <article id="tribute-info">
-                <p><strong> Ratan Naval Tata </strong> (born 28 December 1937) is an Indian industrialist,
+                <p id="info"><strong> Ratan Naval Tata </strong> (born 28 December 1937) is an Indian industrialist,
                     philanthropist,
                     and a former chairman
                     of Tata Sons. He was also chairman of Tata Group, from 1990 to 2012, and again, as interim chairman,
@@ -45,47 +49,48 @@
                     global
                     business.</p>
             </article>
-    </header>
-    <section>
-        <h2>Some Other Facts</h2>
-        <ul>
-            <li><strong>Awards: </strong>
-                <ol>
-                    <li>Padma Bhushan - 2000</li>
-                    <li>Padma Vibhushan - 2008</li>
-                </ol>
-            </li>
+        </header>
+        <section>
+            <h2>Some Other Facts</h2>
+            <ul>
+                <li class="unordered-margin-btm"><strong>Awards: </strong>
+                    <ol>
+                        <li>Padma Bhushan - 2000</li>
+                        <li>Padma Vibhushan - 2008</li>
+                    </ol>
+                </li>
 
-            <li><strong>Best Known For:</strong>
-                <ol>
-                    <li>Being the Interim Chairman of Tata Group</li>
-                    <li>Business Ethics</li>
-                    <li>
-                        <details>
-                            <summary>Philanthropy</summary>
-                            Sources suggest that Mr. Ratan Tata donates almost 70-80% of his salary towards the
-                            betterment
-                            of the society and human well-being.
-                        </details>
-                    </li>
-                </ol>
-            </li>
+                <li class="unordered-margin-btm"><strong>Best Known For:</strong>
+                    <ol>
+                        <li>Being the Interim Chairman of Tata Group</li>
+                        <li>Business Ethics</li>
+                        <li>
+                            <details>
+                                <summary>Philanthropy</summary>
+                                Sources suggest that Mr. Ratan Tata donates almost 70-80% of his salary towards the
+                                betterment
+                                of the society and human well-being.
+                            </details>
+                        </li>
+                    </ol>
+                </li>
 
-            <li><strong>Education:</strong>
-                <ol>
-                    <li>Graduated School from Riverdale Country School, New York - <strong>1955</strong></li>
-                    <li>Bachelor's Degree in Architecture from Cornell University, USA - <strong>1959</strong></li>
-                    <li>Advanced Management Program from Harvard Business School - <strong>1975</strong></li>
-                </ol>
+                <li class="unordered-margin-btm" ordered-><strong>Education:</strong>
+                    <ol>
+                        <li>Graduated School from Riverdale Country School, New York - <strong>1955</strong></li>
+                        <li>Bachelor's Degree in Architecture from Cornell University, USA - <strong>1959</strong></li>
+                        <li>Advanced Management Program from Harvard Business School - <strong>1975</strong></li>
+                    </ol>
 
-            </li>
-        </ul>
-    </section>
+                </li>
+            </ul>
+        </section>
 
-    <footer>
-        To know more about this great personality <a href="https://en.wikipedia.org/wiki/Ratan_Tata" target="_blank">click here</a>
-        <p>&copy; randomBit</p>
-    </footer>
+        <footer class="flex-container">
+            <p> To know more about this great personality <a href="https://en.wikipedia.org/wiki/Ratan_Tata"
+                    target="_blank" id="tribute-link">click here</a> </p>
+            <p id="align-right">&copy; randomBit</p>
+        </footer>
     </main>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
