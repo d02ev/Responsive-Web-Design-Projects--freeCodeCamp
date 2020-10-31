@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+body {
+    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1535813547-99c456a41d4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1190&q=80');
+    background-position: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: #fff;
+}
+
+div#head-container {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1#title {
+    margin-bottom: 0;
+}
+
+p#description {
+    margin-top: 0;
+}
+
+fieldset#form-container {
+    margin-left: 20rem;
+    margin-right: 20rem;
+    border-radius: 10px;
+}
+
+legend#form-legend {
+    font-size: 30px;
+}
+
+label#name-label, label#email-label, label#number-label, label#ta-label, label#dd-label, legend#check-legend, legend#radio-legend {
+    font-size: 19px;
+}
+
+label.font-sz {
+    font-size: 18.5px;
+}
+
+form#survey-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+input, select#dropdown, fieldset#radio-container, fieldset#check-container {
+    margin-bottom: 1rem;
+}
+
+input.btm-margin {
+    margin-bottom: 8px;
+}
+
+input::placeholder {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+select {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+input[type="submit"] {
+    height: 2rem;
+    border: 0 solid #fff;
+    border-radius: 3px;
+    margin-top: 8px;
+    font-family: 'Barlow Condensed', sans-serif;
+    background-color: #F9F871;
+
+}
+
+fieldset#radio-container, fieldset#check-container {
+    padding-bottom: 1px;
+}
+
+input.height, select#dropdown {
+    height: 2rem;
+}
+
+input.padding-left {
+    padding-left: 10px;
+}
+
+input.border, select#dropdown {
+    border: 0px solid #fff;
+    border-radius: 3px;
+}
+
+textarea {
+    border: 0 solid #fff;
+    border-radius: 4px;
+}
+
+@media(max-width: 1096.8px) {
+    fieldset#form-container {
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+}
+
+@media(max-width: 922.4px) {
+    fieldset#form-container {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+
+@media(max-width: 760.8px) {
+    fieldset#form-container {
+        margin: auto;
+    }
+}
