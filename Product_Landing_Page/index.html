@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sweet Tooth Bakery</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <img id="header-img" src="https://i.pinimg.com/originals/5e/c5/78/5ec57816b01673d2d7a602587bf9aabf.png" />
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link padding" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#menu">Our Menu</a></li>
+                <li><a class="nav-link padding" href="#contact-us">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <p id="slogan"><span class="bold">Heaven</span><span class="light"> for your</span></span> <br><span
+                class="bold"> Sweet Tooth</span></p>
+    </section>
+
+    <section id="video-sec">
+        <iframe id="video" width="550" height="300" src="https://www.youtube.com/watch?v=WybAY12ufjw"
+            allowfullscreen></iframe>
+        <div class="box">
+            <ul>
+                <li>
+                    <details open>
+                        <summary>HYGIENE AND PROTECTION</summary>
+                        <span class="color line-height font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam cursus sapien sit amet posuere
+                            dictum.
+                            Morbi fringilla libero in velit congue feugiat. Proin lacinia nisl nec dolor dignissim, vel
+                            varius
+                            ex luctus. Maecenas feugiat, sapien et pellentesque sollicitudin</span>
+                    </details>
+                </li>
+
+                <li>
+                    <details open>
+                        <summary>FRESH OFF THE OVEN</summary>
+                        <span class="color line-height font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam cursus sapien sit amet posuere
+                            dictum.
+                            Morbi fringilla libero in velit congue feugiat. Proin lacinia nisl nec dolor dignissim, vel
+                            varius
+                            ex luctus. Maecenas feugiat, sapien et pellentesque sollicitudin</span>
+                    </details>
+                </li>
+
+                <li>
+                    <details open>
+                        <summary>HOME DELIVERY</summary>
+                        <span class="color line-height font">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Nam cursus sapien sit amet posuere
+                            dictum.
+                            Morbi fringilla libero in velit congue feugiat. Proin lacinia nisl nec dolor dignissim, vel
+                            varius
+                            ex luctus. Maecenas feugiat, sapien et pellentesque sollicitudin</span>
+                    </details>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="flex-div">
+            <div id="donut-card" class="card-dim">
+                <img class="img-dim"
+                    src="https://images.unsplash.com/photo-1527515545081-5db817172677?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                    alt="A Donut" />
+                <h2 id="donut">Donuts</h2>
+                <p class="fix-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam cursus sapien sit amet posuere dictum.</p>
+                <a href="#" id="donut-btn" class="btn-dim">Know More!</a>
+            </div>
+
+            <div id="cake-card" class="card-dim">
+                <img class="img-dim"
+                    src="https://images.unsplash.com/photo-1512223792601-592a9809eed4?ixlib=rb-1.2.1&auto=format&fit=crop&w=604&q=80"
+                    alt="A Chocolate Cake" />
+                <h2 id="cake">Cakes</h2>
+                <p class="fix-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam cursus sapien sit amet posuere dictum.</p>
+                <a href="#" id="cake-btn" class="btn-dim">Know More!</a>
+            </div>
+
+            <div id="cookie-card" class="card-dim">
+                <img class="img-dim"
+                    src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?ixlib=rb-1.2.1&auto=format&fit=crop&w=701&q=80"
+                    alt="A Chocolate Cookie" />
+                <h2 id="cookie">Cookies</h2>
+                <p class="fix-width">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nam cursus sapien sit amet posuere dictum.</p>
+                <a href="#" id="cake-btn" class="btn-dim">Know More!</a>
+            </div>
+        </div>
+
+        <div id="more-cat">
+            <a href="#" id="see-more-btn">See More!</a>
+        </div>
+    </section>
+
+    <section id="contact-us">
+        <h2 id="contact">Contact Us</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <div id="input-container">
+                <input type="email" name="email" id="email" placeholder="Enter your email address"
+                    pattern=". + @ + . + .com" />
+                <input type="submit" id="submit" value="Connect" />
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright Sweet Tooth Bakery, 2020</p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
