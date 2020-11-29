@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    --mainHead: 32px;
+    --stHead: 24px;
+    --smallHead: 20.8px;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main#main-doc {
+    display: grid;
+    grid-template-areas: 
+    "navigation section1"
+    "navigation section2"
+    "navigation section3"
+    "navigation section4"
+    "navigation section5"
+    "navigation section6"
+    "navigation section7"
+    "navigation section8"
+    "navigation section9"
+    "navigation section10"
+    "navigation section11"
+    "navigation section12";
+    column-gap: 25rem;
+    margin-right: 100px;
+
+}
+
+p.nav-head {
+    margin: 0;
+    font-size: var(--mainHead);
+    border: 2px solid #000000;
+    padding: 5px;    
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: 700;
+}
+
+nav#navbar > ul {
+    list-style-type: none;
+    padding-top: 33px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav#navbar > ul li {
+    margin-bottom: 40px;
+    font-size: var(--smallHead);
+}
+
+nav#navbar > ul li:nth-child(13) {
+    margin-bottom: 20px;
+}
+
+a.nav-link {
+    text-decoration: none;
+    color: #000000;
+    border-left: 2px solid #000000;
+    border-right: 2px solid #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a.nav-link:hover {
+    background-color: #ffffff;
+}
+
+
+nav#navbar {
+    max-width: 400px;
+    background-color: gray;   
+    height: 100vh;
+    grid-area: navigation;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+}
+
+section#Introduction {
+    grid-area: section1;
+}
+
+section#Features {
+    grid-area: section2;
+}
+
+section#Uses {
+    grid-area: section3;
+}
+
+section#Getting_Started {
+    grid-area: section4;
+}
+
+section#First_Program {
+    grid-area: section5;
+}
+
+section#Data_Types {
+    grid-area: section6;
+}
+
+section#Comments {
+    grid-area: section7;
+}
+
+section#Variables {
+    grid-area: section8;
+}
+
+section#If_Else {
+    grid-area: section9;
+}
+
+section#While_Loop {
+    grid-area: section10;
+}
+
+section#For_Loop {
+    grid-area: section11;
+}
+
+section#Functions {
+    grid-area: section12;
+}
+
+p.sec-head {
+    font-size: var(--stHead);
+    font-weight: 700;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+p.sec-subhead {
+    font-size: var(--smallHead);
+    font-weight: 700;
+    width: max-content;
+    border-bottom: 2px solid #000000;
+    border-right: 2px solid #000000;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+span.list-head {
+    font-weight: 700;
+}
+
+span.newline::after {
+    content: '\a';
+    white-space: pre;
+}
+
+code.diff-code-snip, code.code-snip {
+    background-color: rgb(43,43,43);
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 50px;
+    border-left: 4px solid rgb(49,66,148);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+code.code-snip {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+code {
+    display: block;
+}
+
+div.code-block {
+    height: 50px;  
+}
+
+span.newline {
+    display: block;
+}
+
+span.identation {
+    margin-left: 45px;
+}
+
+span.new-identation {
+    margin-left: 30px;
+}
+
+span.ex-diff-col {
+    color: green;
+}
+
+span.sa-dif-col {
+    color: #ffffff;
+}
+
+p.example {
+    background-color: lightgray;
+    padding: 10px;
+    padding-right: 30px;
+    padding-bottom: 25px;
+}
+
+@media(max-width: 1020px) {
+    main#main-doc {
+        display: grid;
+        grid-template-areas: 
+        "navigation"
+        "section1"
+        "section2"
+        "section3"
+        "section4"
+        "section5"
+        "section6"
+        "section7"
+        "section8"
+        "section9"
+        "section10"
+        "section11"
+        "section12";
+        margin-right: 20px;
+    }
+
+    section#Introduction {
+        grid-area: section1;
+    }
+    
+    section#Features {
+        grid-area: section2;
+    }
+    
+    section#Uses {
+        grid-area: section3;
+    }
+    
+    section#Getting_Started {
+        grid-area: section4;
+    }
+    
+    section#First_Program {
+        grid-area: section5;
+    }
+    
+    section#Data_Types {
+        grid-area: section6;
+    }
+    
+    section#Comments {
+        grid-area: section7;
+    }
+    
+    section#Variables {
+        grid-area: section8;
+    }
+    
+    section#If_Else {
+        grid-area: section9;
+    }
+    
+    section#While_Loop {
+        grid-area: section10;
+    }
+    
+    section#For_Loop {
+        grid-area: section11;
+    }
+    
+    section#Functions {
+        grid-area: section12;
+    }
+
+    nav#navbar {
+        grid-area: navigation;
+        position: relative;
+        max-width: 100%;
+        text-align: center;
+        height: 20rem;
+        margin-left: 20px;
+        
+    }
+
+    section.main-section {
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Python Documentation</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <ul>
+                <li>
+                    <header>
+                        <p class="nav-head sec-head">
+                            Python Documentation
+                        </p>
+                    </header>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Features">Features</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#Uses">Uses</a>
+                </li>
+
+                <li>
+                    <a class="nav-link" href="#Getting_Started">Getting Started</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#First_Program">First Program</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Data_Types">Data Types</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Comments">Comments</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Variables">Variables</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#If_Else">If Else</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#While_Loop">While Loop</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#For_Loop">For Loop</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#Functions">Functions</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="main-section" id="Introduction">
+            <header>
+                <p class="sec-head">Introduction</p>
+            </header>
+            <p class="sec-info">
+                <p class="intro-para">Python is an interpreted, high-level and general-purpose programming language.
+                    Python's design philosophy emphasizes code readability with its notable use of significant
+                    whitespace.
+                    Its language constructs and object-oriented approach aim to help programmers write clear, logical
+                    code
+                    for smalland large-scale projects.</p>
+
+                <p class="intro-para">Python is dynamically typed and garbage-collected. It supports multiple
+                    programming paradigms, including structured (particularly, procedural), object-oriented, and
+                    functional programming. Python is often
+                    described as a "batteries included" language due to its comprehensive standard library.</p>
+
+                <p class="intro-para">Python was created in the late 1980s, and first released in 1991, by Guido van
+                    Rossum as a successor to the ABC programming language. Python 2.0, released in 2000, introduced new
+                    features, such as list
+                    comprehensions, and a garbage collection system with reference counting, and was discontinued with
+                    version 2.7 in 2020. Python 3.0, released in 2008, was a major revision of the language that is not
+                    completely backward-compatible and much Python 2 code does not run unmodified on Python 3.</p>
+            </p>
+        </section>
+        <section class="main-section" id="Features">
+            <header>
+                <p class="sec-head">Features</p>
+            </header>
+            <p class="sec-info">
+                Python is a multi-paradigm programming language which supports:
+                <ul>
+                    <li>Object-Oriented Programming</li>
+                    <li>Structured Programming</li>
+                    <li>Functional Programming</li>
+                    <li>Aspect-Oriented Programming</li>
+                </ul>
+            </p>
+        </section>
+        <section class="main-section" id="Uses">
+            <header>
+                <p class="sec-head">Uses</p>
+            </header>
+            <p class="sec-info">
+                Python supports cross-platform operating systems which makes building applications with it all the more
+                convenient. Some of the globally known applications such as YouTube, BitTorrent, DropBox, etc. use
+                Python to achieve their functionality.
+
+                <ol>
+                    <li>
+                        <span class="list-head">Web Development</span>
+                        <p class="list-info">
+                            <p class="wd-para">Python can be used to make web-applications at a rapid rate. Why is that?
+                                It is because of
+                                the frameworks Python uses to create these applications. There is common-backend logic
+                                that
+                                goes into making these frameworks and a number of libraries that can help integrate
+                                protocols such as HTTPS, FTP, SSL etc. and even help in the processing of JSON, XML,
+                                E-Mail
+                                and so much more.</p>
+
+                            <p class="wd-para">Some of the most well-known frameworks are Django, Flask, Pyramid. Why
+                                use a framework? The
+                                security, scalability, convenience that they provide is commendable if we compare it to
+                                starting the development of a website from scratch.</p>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="list-head">Game Development</span>
+                        <p class="list-info">
+                            Python is also used in the development of interactive games. There are libraries such as
+                            PySoy which is a 3D game engine supporting Python 3, PyGame which provides functionality and
+                            a library for game development. Games such as Civilization-IV, Disney’s Toontown Online,
+                            Vega Strike etc. have been built using Python.
+                        </p>
+                    </li>
+                    <li>
+                        <span class="list-head">Machine Learning and Artificial Intelligence</span>
+                        <p class="list-info">
+                            <p class="aiml-para">Machine Learning and Artificial Intelligence are the talks of the town
+                                as they yield the
+                                most promising careers for the future. We make the computer learn based on past
+                                experiences
+                                through the data stored or better yet, create algorithms which makes the computer learn
+                                by
+                                itself. The programming language that mostly everyone chooses? It’s Python. Why? Support
+                                for
+                                these domains with the libraries that exist already such as Pandas, Scikit-Learn, NumPy
+                                and
+                                so many more.</p>
+
+                            <p class="aiml-para">Learn the algorithm, use the library and you have your solution to the
+                                problem. It is that
+                                simple. But if you want to go the hardcore way, you can design your own code which
+                                yields a
+                                better solution, which still is much easier when we compare it to other languages.</p>
+                        </p>
+                    </li>
+                    <li>
+                        <span class="list-head">Data Science and Data Visualization</span>
+                        <p class="list-info">
+                            <p class="ds-para">Data is money if you know how to extract relevant information which can
+                                help you take
+                                calculated risks and increase profits. You study the data you have, perform operations
+                                and
+                                extract the information required. Libraries such as Pandas, NumPy help you in extracting
+                                information.</p>
+
+                            <p class="ds-para">You can even visualize the data libraries such as Matplotlib, Seaborn,
+                                which are helpful in
+                                plotting graphs and much more. This is what Python offers you to become a Data
+                                Scientist.</p>
+                        </p>
+                    </li>
+                    <li>and <a href="https://www.upgrad.com/blog/python-applications-in-real-world/"
+                            target="_blank">many more</a></li>
+                </ol>
+            </p>
+        </section>
+        <section class="main-section" id="Getting_Started">
+            <header>
+                <p class="sec-head">
+                    Getting Started
+                </p>
+            </header>
+            <p class="sec-subhead">
+                Python Installation
+            </p>
+            <p class="sec-subinfo">
+                <p class="pi-para">Many PCs and Macs will have python already installed.</p>
+
+                <p class="pi-para">To check if you have python installed on a Windows PC, search in the start bar for
+                    Python or run the
+                    following on the Command Line (cmd.exe):</p>
+
+
+                <code class="diff-code-snip">C:\Users\root>python --version</code>
+
+
+                To check if you have python installed on a Linux or Mac, then on linux open the command line or on
+                Mac open the Terminal and type:
+
+
+                <code class="diff-code-snip">python --version </code>
+
+
+                If you find that you do not have python installed on your computer, then you can download it for
+                free from the following website: <a href="https://www.python.org/"
+                    target="_blank">https://www.python.org/</a>
+            </p>
+            <p class="sec-subhead">
+                Python Quickstart
+            </p>
+            <p class="sec-subinfo">
+                <p class="pqs-para">Python is an interpreted programming language, this means that as a developer you
+                    write Python (.py)
+                    files in a text editor and then put those files into the python interpreter to be executed.</p>
+
+                <p class="pqs-para">The way to run a python file is like this on the command line:</p>
+
+
+                <code class="diff-code-snip">C:\Users\root>python helloworld.py</code>
+
+            </p>
+
+        </section>
+        <section class="main-section" id="First_Program">
+            <header>
+                <p class="sec-head">First Program</p>
+            </header>
+            <p class="sec-info">
+                The infamous "Hello World" program has almost become a tradition of being the first program of any
+                programming language, so the below code snippet shows you how to write your first python program.
+
+                <code class="code-snip">
+                    >>> print('Hello World')
+                </code>
+
+                Copy-paste the above code snippet into your python IDLE and see the output, and just like that you wrote
+                a program on python
+            </p>
+        </section>
+        <section class="main-section" id="Data_Types">
+            <header>
+                <p class="sec-head">Data Types</p>
+            </header>
+            <p class="sec-info">
+                Python has the following data types built-in by default, in these categories:
+                <ul>
+                    <li>
+                        Text Type: <span class="diff-col">str</span>
+                    </li>
+                    <li>
+                        Numeric Type: <span class="diff-col">int, float, complex</span>
+                    </li>
+                    <li>
+                        Sequence Type: <span class="diff-col">list, tuple, range</span>
+                    </li>
+                    <li>
+                        Mapping Type: <span class="diff-col">dict</span>
+                    </li>
+                    <li>
+                        Set Type: <span class="diff-col">set, frozenset</span>
+                    </li>
+                    <li>
+                        Boolean Type: <span class="diff-col">bool</span>
+                    </li>
+                    <li>
+                        Binary Type: <span class="diff-col">bytes, bytearray, memoryview</span>
+                    </li>
+                </ul>
+            </p>
+            <p class="sec-subhead">
+                Getting the Data Type
+            </p>
+            <p class="sec-subinfo">
+                You can get the data type of any object by using the <span class="diff-col">type()</span> function:
+                <p class="example">Example:
+                    <code class="code-snip">
+                           <span class="newline">>>> x = 5</span>
+                            >>> print(type(x))
+                    </code>
+                </p>
+
+                Copy-paste the code snippet above into your IDLE and see the output, the
+                output will show you the datatype of the defined variable 'x', i.e., int.
+            </p>
+        </section>
+        <section class="main-section" id="Comments">
+            <header>
+                <p class="sec-head">
+                    Comments
+                </p>
+            </header>
+            <p class="sec-info">
+                Comments can be:
+                <ul>
+                    <li>used to explain python code.</li>
+                    <li>used to make the code more readable.</li>
+                    <li>used to prevent execution when testing code.</li>
+                </ul>
+
+
+                <p class="sec-subhead">
+                    Creating a Comment
+                </p>
+                <p class="sec-subinfo">
+                    Comments starts with a #, and Python will ignore them:
+                    <p class="example">Example:
+                        <code class="code-snip">
+                            <span class="ex-diff-col newline"><span class="sa-dif-col">>>></span> # This is a Comment</span>
+                            >>> print("Hello, World!")
+                        </code>
+                    </p>
+                </p>
+            </p>
+        </section>
+        <section class="main-section" id="Variables">
+            <header>
+                <p class="sec-head">
+                    Variables
+                </p>
+            </header>
+            <p class="sec-info">
+                Variables are containers for storing data values. Unlike other programming languages, Python has no
+                command for declaring a variable. A variable is created the moment you first assign a value to it.
+                <p class="example">Example:
+                    <code class="code-snip">
+                        <span class="newline">>>> x = 5</span>
+                        <span class="newline">>>> y = "John"</span>
+                        <span class="newline"></span>
+                        <span class="newline">>>> print(x)</span>
+                        <span class="newline">>>> print(y)</span>
+                    </code>
+                </p>
+                String variables can be declared either by using single or double quotes:
+                <p class="example">Example:
+                    <code class="code-snip">
+                        <span class="newline">>>> x = "John"</span>
+                        <span class="ex-diff-col newlinw"><span class="sa-dif-col">>>></span> # is the same as</span>
+                        <span class="newline">>>> x = 'John'</span>
+                    </code>
+                </p>
+            </p>
+            <p class="sec-subhead">
+                Variable Names
+            </p>
+            <p class="sec-subinfo">
+                A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+                Rules for Python variables:
+                <ul>
+                    <li>A variable name must start with a letter or the underscore character.</li>
+                    <li>A variable name cannot start with a number.</li>
+                    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+                    </li>
+                    <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+                </ul>
+                <p class="example">Example:
+                    <code class="code-snip">
+                        <span class=" ex-diff-col newline"><span class="sa-dif-col">>>></span> #Legal variable names:</span>
+                        <span class="newline">>>> myvar = "John"</span>
+                        <span class="newline">>>> my_var = "John"</span>
+                        <span class="newline">>>> _my_var = "John"</span>
+                        <span class="newline">>>> myVar = "John"</span>
+                        <span class="newline">>>> MYVAR = "John"</span>
+                        <span class="newline">>>> myvar2 = "John"</span>
+                        <span class="newline"></span>
+                        <span class="ex-diff-col"><span class="sa-dif-col">>>></span> #Illegal variable names:</span>
+                        <span class="newline">>>> 2myvar = "John"</span>
+                        <span class="newline">>>> my-var = "John"</span>
+                        <span class="newline">>>> my var = "John"</span>
+                </code>
+                </p>
+            </p>
+        </section>
+        <section class="main-section" id="If_Else">
+            <header>
+                <p class="sec-head">
+                    If Else
+                </p>
+            </header>
+            <p class="sec-info">
+                Python supports the usual logical conditions from mathematics:
+                <ul>
+                    <li>Equals: <span class="diff-col">a == b</span></li>
+                    <li>Not Equals: <span class="diff-col">a != b</span></li>
+                    <li>Less than: <span class="diff-col">a < b</span> </li> <li>Less than or equal to: <span
+                                    class="diff-col">a <= b</span> </li> <li>Greater than: <span class="diff-col">a >
+                                            b</span></li>
+                    <li>Greater than or equal to: <span class="diff-col">a >= b</span></li>
+                </ul>
+                These conditions can be used in several ways, most commonly in "if statements" and loops.
+
+                An "if statement" is written by using the if keyword.
+                <p class="example">Example:
+                    <code class="code-snip">
+                        <span class="newline">>>> a = 33</span>
+                        <span class="newline">>>> b = 200</span>
+                        <span class="newline"></span>
+                        <span class="newline">>>> if b > a:</span>
+                            <span class="identation">print('b is greater than a')</span>
+                    </code>
+                </p>
+                <p class="sec-subhead">
+                    Identation
+                </p>
+                <p class="sec-subinfo">
+                    Python relies on indentation (whitespace at the beginning of a line) to define scope in the code.
+                    Other programming languages often use curly-brackets for this purpose.
+                    <p class="example">Example:
+                        <code class="code-snip">
+                            <span class="newline">>>> a = 33</span>
+                            <span class="newline">>>> b = 200</span>
+                            <span class="newline"></span>
+                            <span class="newline">>>> if b > a:</span>
+                            <span class="newline new-identation">print('b is greater than a')<span class="ex-diff-col"># throws an error</span></span>
+                        </code>
+                    </p>
+                </p>
+                <p class="sec-subhead">
+                    Elif
+                </p>
+                <p class="sec-subinfo">
+                    The elif keyword is pythons way of saying "if the previous conditions were not true, then try this
+                    condition".
+                    <p class="example">Example:
+                        <code class="code-snip">
+                            <span class="newline">>>> a = 33</span>
+                            <span class="newline">>>> b = 33</span>
+                            <span class="newline"></span>
+                            <span class="newline">>>> if b > a:</span>
+                                <span class="identation newline">print('b is greater than a')</span>
+                            <span class="newline">>>> elif a == b:</span>
+                                <span class="identation newline">print('a and b are equal')</span>
+                    </code>
+                    </p>
+                </p>
+            </p>
+        </section>
+        <section class="main-section" id="While_Loop">
+            <header>
+                <p class="sec-head">
+                    While Loop
+                </p>
+            </header>
+            <p class="sec-info">
+                With the while loop we can execute a set of statements as long as a condition is true.
+                <p class="example">Example:
+                    <code class="code-snip">
+                        <span class="newline">>>> i = 1</span>
+                        <span class="newline"></span>
+                        <span class="newline">>>> while i < 6:</span>
+                            <span class="identation newline">print(i)</span> 
+                            <span class="identation newline">i +=1</span> 
+                    </code>
+                </p> 
+            </p> 
+        </section> 
+        <section class="main-section" id="For_Loop">
+                        <header>
+                            <p class="sec-head">
+                                For Loop
+                            </p>
+                        </header>
+                        <p class="sec-info">
+                            <p class="fl-para">A for loop is used for iterating over a sequence (that is either a list,
+                                a tuple, a
+                                dictionary, a set, or a string).</p>
+
+                            <p class="fl-para">This is less like the for keyword in other programming languages, and
+                                works more like
+                                an
+                                iterator method as found in other object-orientated programming languages.</p>
+
+                            <p class="fl-para">With the for loop we can execute a set of statements, once for each item
+                                in a list,
+                                tuple, set etc.</p>
+                            <p class="example">Example:
+                                <code class="code-snip">
+                                    <span class="newline">>>> fruits = ["apple", "banana", "cherry"]</span>
+                                    <span class="newline"></span>
+                                    <span class="newline">>>> for x in fruits:</span>
+                                        <span class="newline identation">print(x)</span>
+                                </code>
+                            </p>
+                        </p>
+        </section>
+        <section class="main-section" id="Functions">
+            <header>
+                <p class="sec-head">
+                    Functions
+                </p>
+            </header>
+            <p class="sec-info">
+                <p class="sec-subhead">
+                    Creating a Function
+                </p>
+                <p class="sec-subinfo">
+                    In Python a function is defined using the def keyword:
+                    <p class="example">Example:
+                        <code class="code-snip">
+                            <span class="newline">>>> def my_function():</span>
+                                <span class="newline identation">print('Hello')</span>
+                        </code>
+                    </p>
+                </p>
+                <p class="sec-subhead">
+                    Calling a Function
+                </p>
+                <p class="sec-subinfo">
+                    To call a function, use the function name followed by parenthesis:
+                    <p class="example">Example:
+                        <code class="code-snip">
+                            <span class="newline">>>> def my_function():</span>
+                                <span class="newline identation">print('Hello')</span>
+                            <span class="newline"></span>
+                            <span class="newline ex-diff-col"><span class="sa-dif-col">>>></span> # function call</span>
+                            <span class="newline">>>>my_function()</span>
+                    </code>
+                    </p>
+                </p>
+            </p>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
