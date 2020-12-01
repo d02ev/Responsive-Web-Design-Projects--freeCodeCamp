@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+    --bodyColor: rgb(27,27,50);
+    --navColor: rgb(10,10,35);
+    --textColor: rgb(245,246,247);
+    --btnHoverColor: rgb(255, 255, 255);
+    --bgImgColor:  rgba(27,27,50,0.7);
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav#navbar {
+    background-color: var(--navColor);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav#navbar > ul {
+    text-align: center;
+}
+
+nav#navbar > ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+a.navlink {
+    color: var(--textColor);
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+a.navlink:hover {
+    background-color: var(--btnHoverColor);
+    color: var(--navColor);
+}
+
+section#welcome-section {
+    display: grid;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./tracy-adams-YSkuPlvE4nc-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    color: var(--textColor);
+    padding-top: 10px;
+    
+}
+
+section#welcome-section::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgImgColor);
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+section#welcome-section > div#hero-sec h1 {
+    font-family: 'Major Mono Display', monospace;
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+p#wel-sec-info-fun {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    margin-top: 10px;
+    
+}
+
+span#bold-alias-name {
+    font-weight: 800;
+}
+
+div#hero-sec {
+    position: relative;
+    z-index: 2;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+section#projects {
+    background-color: var(--bodyColor);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+section#projects  div#flex-ele {
+    display: flex;
+    flex-direction: row;
+    justify-content : space-evenly;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+div.project-tile {
+    text-align: center; 
+    padding: 20px 20px 30px 20px;
+    border: 2px solid #ffffff;
+    margin-bottom: 100px;
+}
+
+
+p.pro-det {
+    color: var(--textColor);
+}
+
+p.btm-mgin {
+    margin-bottom: 50px;
+}
+
+div.btn-mgin {
+    margin-bottom: 15px;
+}
+
+a.km {
+    text-decoration: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: var(--textColor);
+    border: 0.5px solid #ffffff;
+}
+
+a.km:hover {
+    background-color: var(--navColor);
+}
+
+div#btn-flex-ele {
+    margin-top: 50px;
+    text-align: center;
+}
+
+a#profile-link {
+    color: var(--textColor);
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 0.5px solid #ffffff;
+}
+
+a#profile-link:hover {
+    background-color: var(--navColor);
+}
+
+span.bold {
+    font-weight: 700;
+}
+
+@media(max-width: 1047.2px) {
+    section#projects  div#flex-ele {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    section#welcome-section > div#hero-sec h1 {
+        font-size: 45px;
+    }
+}
+
+@media(max-width: 1005.6px) {
+    section#welcome-section > div#hero-sec h1 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 834.4px) {
+    section#welcome-section > div#hero-sec h1 {
+        font-size: 35px;
+    }
+
+    p#wel-sec-info-fun {
+        margin-right: 15px;
+    }
+}
